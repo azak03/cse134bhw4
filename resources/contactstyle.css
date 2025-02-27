@@ -27,3 +27,7 @@ button {
     background-color: #5488b8;
     border: none;
 }
+
+em {
+    color: red;
+}
