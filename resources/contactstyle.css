@@ -1,6 +1,6 @@
 :root {
   --inp-col: #343436;
-
+  --txt-col: white;
 }
 
 form {
@@ -16,13 +16,14 @@ label {
 
 .light-mode {
   --inp-col: #D3D3D3;
+  --txt-col: black;
 }
 
 input, textarea {
     padding: 0.8rem;
     border: none;
     background-color: var(--inp-col);
-    color: white;
+    color: var(--txt-col);
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: 1.5rem;
