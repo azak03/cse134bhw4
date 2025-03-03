@@ -35,7 +35,10 @@ em {
 
 textarea {
     resize: none;
-    height: 400%;
+}
+
+input:required, textlabel:required {
+    outline: 3px solid lightred;
 }
 
 input:user-invalid, textarea:user-invalid {
