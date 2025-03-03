@@ -55,15 +55,13 @@
     alert(field.name);
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
-        if(field.checkValidity()) {
-        //if (!pattern.test(e.target.value) && e.target.value.length > 0) {
-
+        if (!pattern.test(e.target.value) && e.target.value.length > 0) {
             e.target.classList.add("flash");
             errorOutput.textContent = `Rejected character in ${field.name} field!`;
             errorOutput.style.display = "block";
             setTimeout(() => {
                 e.target.classList.remove("flash");
-                errorOutput.style.display = "none";
+                errorOutput.classList.add("fade");
             }, 1000);
             e.target.value = e.target.value.slice(0, -1);
         }
