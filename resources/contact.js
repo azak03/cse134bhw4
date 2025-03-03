@@ -52,5 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     form.addEventListener("submit", (e) => {
         document.getElementById("form-errors").value = JSON.stringify(formerrors);
+        document.getElementsByClassName("info-message")[0].classList.add("fade");
     });
 });
