@@ -38,7 +38,7 @@ textarea {
 }
 
 input:required, textlabel:required {
-    outline: 3px solid lightred;
+    outline: 3px solid #FFCCCB;
 }
 
 input:user-invalid, textarea:user-invalid {
