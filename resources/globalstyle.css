@@ -20,6 +20,17 @@
     box-shadow: none;
 }
 
+.circle-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+
 .links {
   display: flex;
   list-style: none;
