@@ -15,9 +15,9 @@ input, textarea {
     color: white;
     box-sizing: border-box;
     overflow: hidden;
-    max-width: 100%;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
+    display: block;
 }
 
 textarea {
