@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
     let form = document.getElementById("contactform");
     let comments = document.getElementById("comments");
     let counter = document.getElementById("counter");
