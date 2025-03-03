@@ -20,13 +20,13 @@
     box-shadow: none;
 }
 
-.circle-button {
+.theme-button {
     border-radius: 50%;
     border: none;
     cursor: pointer;
     background-color: white;
     transition: background-color 0.3s ease;
-    height: 10vh;
+    height: 5vh;
     width: 5vh;
 }
 
