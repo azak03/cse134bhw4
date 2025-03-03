@@ -61,9 +61,11 @@ input:user-valid, textarea:user-valid {
 }
 
 #counter {
-    margin-top: -1rem;
-    color: black;
+    color: white;
 }
 #counter.warn {
     color: orange;
+}
+#counter.error {
+    color: red;
 }
