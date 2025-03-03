@@ -2,6 +2,7 @@
   --site-font: futura, Helvetica, Arial;
   --header-color: color(display-p3 0.4 0.6 0.8);
   --fallback-color: #6699CC;
+  --backg-color: #1c1c1d;
 }
 
 @font-face {
@@ -9,6 +10,10 @@
   src: url('futura-book-webfont.woff2') format('woff2'),
   font-weight: normal;
   font-style: normal;
+}
+
+.light-mode {
+  --backg-color: white;
 }
 
 #mobile {
@@ -64,7 +69,7 @@
 body {
     font-size: 1.5rem;
     font-family: var(--site-font);
-    background-color: #1c1c1d;
+    background-color: var(--backg-color);
     margin: 0;
     display: flex;
     flex-direction: column;
