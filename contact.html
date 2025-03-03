@@ -54,9 +54,21 @@
         let remaining = 500 - comments.value.length;
         counter.textContent = `${remaining} characters remaining`;
         if (remaining <= 50) {
-            counter.classList.add("warn");
+            if (remaining <= 0) {
+                if (counter.classList.contains("warn") {
+                    counter.classList.remove("warn");
+                }
+                counter.classList.add("red");
+            } else {
+                counter.classList.add("warn");
+            }
         } else {
-            counter.classList.remove("warn");
+            if (counter.classList.contains("warn") {
+                counter.classList.remove("warn");
+            }
+            if (counter.classList.contains("error") {
+                counter.classList.remove("error");
+            }
         }
     });
 
