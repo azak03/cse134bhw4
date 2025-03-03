@@ -35,5 +35,5 @@ em {
 
 textarea {
     resize: none;
-    height: 2rem;
+    height: 2dvh;
 }
