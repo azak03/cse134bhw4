@@ -59,3 +59,11 @@ input:user-valid, textarea:user-valid {
     outline: 3px solid green;
     box-shadow: 0 0 10px green;
 }
+
+#counter {
+    margin-top: -1rem;
+    color: black;
+}
+#counter.warn {
+    color: orange;
+}
