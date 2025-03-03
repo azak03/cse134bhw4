@@ -26,7 +26,8 @@
     cursor: pointer;
     background-color: white;
     transition: background-color 0.3s ease;
-    height: 200vh;
+    height: 10vh;
+    width: 5vh;
 }
 
 
