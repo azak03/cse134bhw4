@@ -17,8 +17,8 @@ input, textarea {
     overflow: hidden;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    width: 100%
-    max-width: 100%
+    width: 100%;
+    max-width: 100%;
 }
 
 button {
@@ -36,6 +36,10 @@ em {
 
 textarea {
     resize: none;
+}
+
+.error-message, .info-messsage {
+    display: none;   
 }
 
 input:required, textarea:required {
