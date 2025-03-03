@@ -30,8 +30,10 @@
                 <label for="reason">Email:<em>*</em></label>
                 <input type="text" id="email" name="email" required minlength="5" maxlength="60" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
                 <label for="message">Comments:<em>*</em></label>
+                <div id="counter">500 characters remaining</div>
                 <textarea id="comments" name="comments" required minlength="5" maxlength="500"></textarea>
                 <input type="hidden" id="possible_bot" name="possible_bot" value="true">
+                <input type="hidden" id="form-errors" name="form-errors">
                 <button type="submit">Submit</button>
                 <br>
                 <br>
