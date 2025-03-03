@@ -17,8 +17,6 @@ input, select, textarea {
     overflow: hidden;
     max-width: 100%;
     margin-bottom: 1.5rem;
-    width: 50%
-    display: block;
 }
 
 button {
@@ -39,12 +37,12 @@ textarea {
     height: 400%;
 }
 
-input:required:invalid, textarea:required:invalid {
+input:user-invalid, textarea:user-invalid {
     border-color: red;
     background-color: #ffe6e6;
 }
 
-input:required:valid, textarea:required:valid {
+input:user-valid, textarea:user-valid {
     border-color: green;
     background-color: #e6ffe6;
 }
