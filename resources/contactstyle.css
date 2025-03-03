@@ -39,6 +39,7 @@ textarea {
 }
 
 input:user-invalid, textarea:user-invalid {
+    outline: 3px solid red;
     box-shadow: 0 0 10px red;
 }
 
