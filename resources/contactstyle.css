@@ -40,10 +40,10 @@ textarea {
 }
 
 .error-message {
-    display: hidden;   
+    display: none;   
 }
 .info-message {
-    display: hidden;
+    display: none;
 }
 
 input:required, textarea:required {
