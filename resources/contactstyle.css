@@ -76,8 +76,9 @@ input:user-valid, textarea:user-valid {
     animation: flash 0.5s alternate;
 }
 
-.flash {
-    animation: fade 0.5s;
+.fade {
+    display: block;
+    animation: fade 3s;
 }
 
 @keyframes flash {
