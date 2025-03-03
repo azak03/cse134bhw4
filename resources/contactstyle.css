@@ -76,7 +76,16 @@ input:user-valid, textarea:user-valid {
     animation: flash 0.5s alternate;
 }
 
+.flash {
+    animation: fade 0.5s;
+}
+
 @keyframes flash {
     from { background-color: red; }
     to { background-color: #343436; }
 }
+
+@keyframes fade {
+   0% {opacity: 1;}
+   100% {opacity: 0; display: none; opacity: 1;} 
+} 
