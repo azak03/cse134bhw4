@@ -69,3 +69,12 @@ input:user-valid, textarea:user-valid {
 #counter.error {
     color: red;
 }
+
+.flash {
+    animation: flash 0.5s alternate;
+}
+
+@keyframes flash {
+    from { background-color: red; }
+    to { background-color: #343436; }
+}
