@@ -49,12 +49,12 @@
     let comments = document.getElementById("comments");
     let counter = document.getElementById("counter");
     let formErrors = [];
-    let errorOutput = document.getElementById("error-message");
         
     document.querySelectorAll("input[pattern]").forEach(field => {
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
         if (!pattern.test(e.target.value) && e.target.value.length > 0) {
+            let errorOutput = document.getElementById("error-message");
             e.target.classList.add("flash");
             alert("WOAH");
             alert(errorOutput);
