@@ -39,9 +39,7 @@ textarea {
 }
 
 input:user-invalid, textarea:user-invalid {
-    border-color: red;
-    background-color: #ffe6e6;
-    box-shadow: 0 0 10px #FFCC00;
+    box-shadow: 0 0 10px red;
 }
 
 input:user-valid, textarea:user-valid {
