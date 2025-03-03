@@ -38,7 +38,7 @@ textarea {
 }
 
 input:required, textarea:required {
-    outline: 1px solid #d8504d;
+    outline: 0.5px solid #d8504d;
 }
 
 input:user-invalid, textarea:user-invalid {
