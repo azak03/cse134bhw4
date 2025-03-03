@@ -39,7 +39,7 @@ textarea {
 }
 
 input:required, textarea:required {
-    outline: 0.5px dashed red;
+    outline: 0.3px dashed #cc474b;
 }
 
 input:user-invalid, textarea:user-invalid {
