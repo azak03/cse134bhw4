@@ -38,8 +38,11 @@ textarea {
     resize: none;
 }
 
-.error-message, .info-messsage {
+.error-message {
     display: none;   
+}
+.info-message {
+    display: none;
 }
 
 input:required, textarea:required {
