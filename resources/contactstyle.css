@@ -37,6 +37,10 @@ textarea {
     resize: none;
 }
 
+input:required, textarea:required {
+    outline: 0.5px dashed red;
+}
+
 input:user-invalid, textarea:user-invalid {
     outline: 3px solid red;
     box-shadow: 0 0 10px red;
