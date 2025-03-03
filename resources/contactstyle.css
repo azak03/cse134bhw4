@@ -38,3 +38,13 @@ textarea {
     resize: none;
     height: 400%;
 }
+
+input:required:invalid, textarea:required:invalid {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+input:required:valid, textarea:required:valid {
+    border-color: green;
+    background-color: #e6ffe6;
+}
