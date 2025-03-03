@@ -1,5 +1,6 @@
-let themeToggle = document.getElementById("theme-toggle");
+let themeToggle = document.getElementById("theme-button");
 themeToggle.addEventListener("click", () => {
+    alert("t");
     document.body.classList.toggle("dark-mode");
     let isDark = document.body.classList.contains("dark-mode");
     themeToggle.classList.toggle("dark", isDark);
