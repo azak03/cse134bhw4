@@ -40,10 +40,12 @@ textarea {
 }
 
 .error-message {
-    display: none;   
+    display: none;
+    color: red;
 }
 .info-message {
     display: none;
+    color: green;
 }
 
 input:required, textarea:required {
