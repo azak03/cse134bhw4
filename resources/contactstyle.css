@@ -63,7 +63,7 @@ input:user-valid, textarea:user-valid {
 }
 
 #counter {
-    color: white;
+    color: green;
 }
 #counter.warn {
     color: orange;
