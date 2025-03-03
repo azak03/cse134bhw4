@@ -71,6 +71,7 @@
         });
     });
     comments.addEventListener("input", () => {
+        document.getElementById("form-errors").value = JSON.stringify(formerrors);
         let remaining = 500 - comments.value.length;
         counter.textContent = `${remaining} characters remaining`;
         if (remaining <= 50) {
