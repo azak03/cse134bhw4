@@ -59,7 +59,7 @@
         //if (!pattern.test(e.target.value) && e.target.value.length > 0) {
 
             e.target.classList.add("flash");
-            errorOutput.textContent = `Illegal character in ${field.name}`;
+            errorOutput.textContent = `Rejected character in ${field.name} field!`;
             errorOutput.style.display = "block";
             setTimeout(() => {
                 e.target.classList.remove("flash");
