@@ -33,6 +33,6 @@ em {
     font-size: 1.4rem;
 }
 
-label {
-    margin-bottom: 1.5rem;
+input {
+    margin-bottom: 10px;
 }
