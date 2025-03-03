@@ -27,9 +27,9 @@
             <fieldset>
                 <label for="name">Name:<em>*</em></label>
                 <input type="text" id="name" name="name" required minlength="4" maxlength="60" pattern="^[A-Za-z]+$">
-                <label for="reason">Email:<em>*</em></label>
+                <label for="email">Email:<em>*</em></label>
                 <input type="text" id="email" name="email" required minlength="5" maxlength="60" pattern="^(?!.*\..*\.)(?!.*@.*@).*">
-                <label for="message">Comments:<em>*</em></label>
+                <label for="comments">Comments:<em>*</em></label>
                 <textarea id="comments" name="comments" required minlength="5" maxlength="500"></textarea>
                 <input type="hidden" id="possible_bot" name="possible_bot" value="true">
                 <button type="submit">Submit</button>
