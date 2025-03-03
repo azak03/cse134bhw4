@@ -17,15 +17,8 @@ input, textarea {
     overflow: hidden;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    display: block;
-}
-
-textarea {
-    width: 100%;
-}
-
-input {
-    width: 80%;
+    width: 100%
+    max-width: 100%
 }
 
 button {
