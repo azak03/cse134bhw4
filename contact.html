@@ -56,8 +56,6 @@
     field.addEventListener("input", (e) => {
         if (!pattern.test(e.target.value) && e.target.value.length > 0) {
             e.target.classList.add("flash");
-            alert("WOAH");
-            alert(errorOutput);
             errorOutput.textContent = `Illegal character in ${field.name}`;
             errorOutput.style.display = "block";
             setTimeout(() => {
