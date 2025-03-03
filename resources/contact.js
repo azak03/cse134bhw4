@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
         if (!pattern.test(e.target.value) && e.target.value.length > 0) {
-            formerrors[field.name].push("Invalid character!");
+            formerrors[field.name].push("Bad character: " + e.data);
             e.target.classList.add("flash");
             erroroutput.textContent = `Rejected character in ${field.name} field!`;
             erroroutput.classList.add("fade");
