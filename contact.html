@@ -71,7 +71,6 @@
         });
     });
     comments.addEventListener("input", () => {
-        document.getElementById("form-errors").value = JSON.stringify(formerrors);
         let remaining = 500 - comments.value.length;
         counter.textContent = `${remaining} characters remaining`;
         if (remaining <= 50) {
@@ -98,9 +97,10 @@
             }
         }
     });
-
-        
-
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        document.getElementById("form-errors").value = JSON.stringify(formerrors);
+    });
     </script>
     <noscript>Warning: Your browser does not have JavaScript support or JavaScript is disabled! This may cause problems when viewing my site!</noscript>
 </body>
