@@ -52,16 +52,14 @@
     let errorOutput = document.getElementsByClassName("error-message")[0];
     
     document.querySelectorAll("input[pattern]").forEach(field => {
-    alert(field.name);
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
         if (!pattern.test(e.target.value) && e.target.value.length > 0) {
             e.target.classList.add("flash");
             errorOutput.textContent = `Rejected character in ${field.name} field!`;
-            errorOutput.style.display = "block";
+            errorOutput.classList.add("fade");
             setTimeout(() => {
                 e.target.classList.remove("flash");
-                errorOutput.classList.add("fade");
             }, 1000);
             e.target.value = e.target.value.slice(0, -1);
         }
