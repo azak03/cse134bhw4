@@ -28,7 +28,7 @@
                 <label for="name">Name:<em>*</em></label>
                 <input type="text" id="name" name="name" required minlength="4" maxlength="60" pattern="[A-Za-z\s]+">
                 <label for="reason">Email:<em>*</em></label>
-                <input type="text" id="email" name="email" required minlength="5" maxlength="60" pattern="[^a-zA-Z0-9._%+-]">
+                <input type="text" id="email" name="email" required minlength="5" maxlength="60" pattern="^(?!.*\..*\.)(?!.*@.*@).*">
                 <label for="message">Comments:<em>*</em></label>
                 <div id="counter">500 characters remaining</div>
                 <textarea id="comments" name="comments" required minlength="5" maxlength="500"></textarea>
