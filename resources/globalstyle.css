@@ -20,11 +20,10 @@
     box-shadow: none;
 }
 
-.theme-button {
-    border-radius: 50%;
+#theme-button {
+    background: 0;
     border: none;
     cursor: pointer;
-    background-color: white;
     height: 5vh;
     width: 5vh;
 }
