@@ -37,8 +37,8 @@ textarea {
     resize: none;
 }
 
-input:required, textlabel:required {
-    outline: 3px solid #FFCCCB;
+input:required, textarea:required {
+    outline: 1px solid #FFCCCB;
 }
 
 input:user-invalid, textarea:user-invalid {
