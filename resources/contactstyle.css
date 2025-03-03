@@ -44,6 +44,6 @@ input:user-invalid, textarea:user-invalid {
 }
 
 input:user-valid, textarea:user-valid {
-    border-color: green;
-    background-color: #e6ffe6;
+    outline: 3px solid green;
+    box-shadow: 0 0 10px green;
 }
