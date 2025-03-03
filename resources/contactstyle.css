@@ -9,6 +9,7 @@ label {
     margin-bottom: 2.2rem;
 }
 input, select, textarea {
+    width: 100%;
     padding: 0.8rem;
     border: none;
     background-color: #343436;
