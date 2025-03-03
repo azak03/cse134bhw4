@@ -5,6 +5,7 @@
   --backg-color: #1c1c1d;
   --white: white;
   --font-col: #e7e7e7;
+  --link-col: #ADD8E6;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
   --backg-color: white;
   --white: black;
   --font-col: black;
+  --link-col: #6495ED;
 }
 
 #mobile {
@@ -60,7 +62,7 @@
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: #ADD8E6;
+  color: var(--link-col);
   font-weight: italic;
   transition: transform 0.3s ease, color 0.3s ease;
 }
