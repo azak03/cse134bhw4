@@ -26,9 +26,9 @@
         <form action="https://httpbin.org/get" method="GET">
             <fieldset>
                 <label for="name">Name:<em>*</em></label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="60" pattern="[A-Za-z\s]+">
                 <label for="reason">Email:<em>*</em></label>
-                <input type="text" id="email" name="email" required>
+                <input type="text" id="email" name="email" required minlength="5" maxlength="60">
                 <label for="message">Comments:<em>*</em></label>
                 <textarea id="comments" name="comments" required></textarea>
                 <input type="hidden" id="possible_bot" name="possible_bot" value="true">
