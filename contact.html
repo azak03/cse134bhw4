@@ -52,6 +52,7 @@
     let errorOutput = document.getElementsByClassName("error-message")[0];
     
     document.querySelectorAll("input[pattern]").forEach(field => {
+    alert(field.name);
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
         if (!pattern.test(e.target.value) && e.target.value.length > 0) {
