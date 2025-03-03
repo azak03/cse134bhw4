@@ -36,6 +36,7 @@ em {
 
 textarea {
     resize: none;
+    height: 300px;
 }
 
 .error-message {
