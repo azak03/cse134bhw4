@@ -17,6 +17,7 @@
 .light-mode {
   --backg-color: white;
   --white: black;
+  --font-col: black;
 }
 
 #mobile {
