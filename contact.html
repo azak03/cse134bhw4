@@ -47,16 +47,16 @@
     <script>
     let form = document.getElementById("contactform");
     let comments = document.getElementById("comments");
-    const charCount = document.getElementById("counter");
-    const formErrors = [];
+    let counter = document.getElementById("counter");
+    let formErrors = [];
     
     comments.addEventListener("input", () => {
-        const remaining = 500 - comments.value.length;
-        charCount.textContent = `${remaining} characters remaining`;
+        let remaining = 500 - comments.value.length;
+        counter.textContent = `${remaining} characters remaining`;
         if (remaining <= 50) {
-            charCount.classList.add("warn");
+            counter.classList.add("warn");
         } else {
-            charCount.classList.remove("warn");
+            counter.classList.remove("warn");
         }
     });
 
