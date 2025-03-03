@@ -60,6 +60,9 @@
                 }
                 counter.classList.add("error");
             } else {
+                if (counter.classList.contains("error")) {
+                    counter.classList.remove("error");
+                }
                 counter.classList.add("warn");
             }
         } else {
