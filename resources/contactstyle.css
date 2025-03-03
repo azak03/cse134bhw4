@@ -7,7 +7,6 @@ fieldset {
 }
 label {
     margin-bottom: 2.2rem;
-    width: 50%
 }
 input, select, textarea {
     width: 100%;
@@ -19,6 +18,7 @@ input, select, textarea {
     overflow: hidden;
     max-width: 100%;
     margin-bottom: 1.5rem;
+    width: 50%
 }
 
 button {
