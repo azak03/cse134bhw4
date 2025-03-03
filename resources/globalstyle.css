@@ -3,6 +3,8 @@
   --header-color: color(display-p3 0.4 0.6 0.8);
   --fallback-color: #6699CC;
   --backg-color: #1c1c1d;
+  --white: white;
+  --font-col: #e7e7e7;
 }
 
 @font-face {
@@ -14,13 +16,14 @@
 
 .light-mode {
   --backg-color: white;
+  --white: black;
 }
 
 #mobile {
     display: none;
     font-size: 3rem;
     background: none;
-    color: #e7e7e7;
+    color: var(--font-col);
     border: none;
     box-shadow: none;
 }
@@ -75,7 +78,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #e7e7e7;
+    color: var(--font-col);
 }
 
 h1 {
