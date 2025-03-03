@@ -9,7 +9,6 @@ label {
     margin-bottom: 2.2rem;
 }
 input, select, textarea {
-    width: 100%;
     padding: 0.8rem;
     border: none;
     background-color: #343436;
@@ -19,6 +18,14 @@ input, select, textarea {
     max-width: 100%;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 80%;
 }
 
 button {
