@@ -21,7 +21,6 @@
 }
 
 #theme-button {
-    display: none;
     background: 0;
     border: none;
     cursor: pointer;
@@ -33,6 +32,9 @@
     font-size: 4rem;
 }
 
+#theme-button.off {
+    display: none;
+}
 
 .links {
   display: flex;
