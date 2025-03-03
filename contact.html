@@ -55,7 +55,8 @@
     alert(field.name);
     let pattern = new RegExp(field.pattern);
     field.addEventListener("input", (e) => {
-        if (!pattern.test(e.target.value) && e.target.value.length > 0) {
+        if(e.checkValidity()) {
+        //if (!pattern.test(e.target.value) && e.target.value.length > 0) {
 
             e.target.classList.add("flash");
             errorOutput.textContent = `Illegal character in ${field.name}`;
