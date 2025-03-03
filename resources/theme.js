@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let themeToggle = document.getElementById("theme-button");
-    themeToggle.style.display = "block";
+    themeToggle.classList.remove("off");
     themeToggle.addEventListener("click", () => {
         alert("t");
         document.body.classList.toggle("dark-mode");
