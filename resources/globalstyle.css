@@ -21,6 +21,7 @@
 }
 
 #theme-button {
+    display: none;
     background: 0;
     border: none;
     cursor: pointer;
