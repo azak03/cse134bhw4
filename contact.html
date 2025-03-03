@@ -49,7 +49,23 @@
     let comments = document.getElementById("comments");
     let counter = document.getElementById("counter");
     let formErrors = [];
-    
+    let errorOutput = document.getElementById("error-message");
+        
+    document.querySelectorAll("input[pattern]").forEach(field => {
+    let pattern = new RegExp(field.pattern);
+    field.addEventListener("input", (e) => {
+        if (!pattern.test(e.target.value) && e.target.value.length > 0) {
+            e.target.classList.add("flash");
+            errorOutput.textContent = `Illegal character in ${field.name}`;
+            errorOutput.style.display = "block";
+            setTimeout(() => {
+                e.target.classList.remove("flash");
+                errorOutput.style.display = "none";
+            }, 1000);
+            e.target.value = e.target.value.slice(0, -1);
+        }
+        });
+    });
     comments.addEventListener("input", () => {
         let remaining = 500 - comments.value.length;
         counter.textContent = `${remaining} characters remaining`;
@@ -74,6 +90,8 @@
             }
         }
     });
+
+        
 
     </script>
     <noscript>Warning: Your browser does not have JavaScript support or JavaScript is disabled! This may cause problems when viewing my site!</noscript>
