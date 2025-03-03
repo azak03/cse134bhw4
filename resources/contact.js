@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
         document.getElementById("form-errors").value = JSON.stringify(formerrors);
     });
 });
